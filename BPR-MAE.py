@@ -413,57 +413,57 @@ def BPR_DAE(learning_rate=0.1, batch_size=128, epoch_time=30, max_patience=3):
     fb = open('ijk_pretrain_da_1layerVisual_best' + str(learning_rate) + '.txt', 'a+')
     fi = open('ijk_pretrain_da_1layerVisual_cost' + str(learning_rate) + '.txt', 'a+')
 
-    W0_v =  theano.shared(numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/w0_v_vt10_100_my.csv',dtype='float32'))
+    W0_v =  theano.shared(numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/w0_v_vt10_100_my.csv',dtype='float32'))
     print '0'
-    b0_v =  theano.shared(numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/b0_v_vt10_100_my.csv',dtype='float32'))
+    b0_v =  theano.shared(numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/b0_v_vt10_100_my.csv',dtype='float32'))
     print '2'
-    W1_v =  theano.shared(numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/w1_v_vt10_100_my.csv',dtype='float32'))
+    W1_v =  theano.shared(numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/w1_v_vt10_100_my.csv',dtype='float32'))
     print '1'
-    b1_v =  theano.shared(numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/b1_v_vt10_100_my.csv',dtype='float32'))
+    b1_v =  theano.shared(numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/b1_v_vt10_100_my.csv',dtype='float32'))
     print '2'
-    W2_v =  theano.shared(numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/w2_v_vt10_100_my.csv',dtype='float32'))
+    W2_v =  theano.shared(numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/w2_v_vt10_100_my.csv',dtype='float32'))
     print '3'
-    b2_v =  theano.shared(numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/b2_v_vt10_100_my.csv',dtype='float32'))
+    b2_v =  theano.shared(numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/b2_v_vt10_100_my.csv',dtype='float32'))
     print '4'
-    W0_c =  theano.shared(numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/w0_c_vt10_100_my.csv',dtype='float32'))
+    W0_c =  theano.shared(numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/w0_c_vt10_100_my.csv',dtype='float32'))
     print '6'
-    b0_c = theano.shared( numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/b0_c_vt10_100_my.csv',dtype='float32'))
+    b0_c = theano.shared( numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/b0_c_vt10_100_my.csv',dtype='float32'))
     print '7'
-    W1_c =  theano.shared(numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/w1_c_vt10_100_my.csv',dtype='float32'))
+    W1_c =  theano.shared(numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/w1_c_vt10_100_my.csv',dtype='float32'))
     print '6'
-    b1_c = theano.shared( numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/b1_c_vt10_100_my.csv',dtype='float32'))
+    b1_c = theano.shared( numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/b1_c_vt10_100_my.csv',dtype='float32'))
     print '7'
-    W2_c =  theano.shared(numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/w2_c_vt10_100_my.csv',dtype='float32'))
+    W2_c =  theano.shared(numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/w2_c_vt10_100_my.csv',dtype='float32'))
     print '8'
-    b2_c = theano.shared( numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/b2_c_vt10_100_my.csv',dtype='float32'))
+    b2_c = theano.shared( numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/b2_c_vt10_100_my.csv',dtype='float32'))
     print '9'
-    b0_prime_v = theano.shared( numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/b0_prime_v_vt10_100_my.csv',dtype='float32'))
+    b0_prime_v = theano.shared( numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/b0_prime_v_vt10_100_my.csv',dtype='float32'))
     print '00'
-    b1_prime_v = theano.shared( numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/b1_prime_v_vt10_100_my.csv',dtype='float32'))
+    b1_prime_v = theano.shared( numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/b1_prime_v_vt10_100_my.csv',dtype='float32'))
     print '10'
-    b2_prime_v = theano.shared( numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/b2_prime_v_vt10_100_my.csv',dtype='float32'))
+    b2_prime_v = theano.shared( numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/b2_prime_v_vt10_100_my.csv',dtype='float32'))
     print '11'
-    b0_prime_c =  theano.shared(numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/b1_prime_c_vt10_100_my.csv',dtype='float32'))
+    b0_prime_c =  theano.shared(numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/b1_prime_c_vt10_100_my.csv',dtype='float32'))
     print '120'
-    b1_prime_c =  theano.shared(numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/b1_prime_c_vt10_100_my.csv',dtype='float32'))
+    b1_prime_c =  theano.shared(numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/b1_prime_c_vt10_100_my.csv',dtype='float32'))
     print '12'
-    b2_prime_c =  theano.shared(numpy.loadtxt('/home/liujinhuan/MM/bottom_shoes_test/Visual+Textual/TMM/b2_prime_c_vt10_100_my.csv',dtype='float32'))
-    with open("/home/liujinhuan/MM/bottom_shoes_test/Visual/TMM/AUC_new_dataset_train_811_norm.pkl", "r") as f:
+    b2_prime_c =  theano.shared(numpy.loadtxt('/home/***/MM/bottom_shoes_test/Visual+Textual/TMM/b2_prime_c_vt10_100_my.csv',dtype='float32'))
+    with open("/home/***/MM/bottom_shoes_test/Visual/TMM/AUC_new_dataset_train_811_norm.pkl", "r") as f:
         train_set =  numpy.asarray(cPickle.load(f),dtype='float32')
     print 1
-    with open("/home/liujinhuan/MM/bottom_shoes_test/Visual/TMM/AUC_new_dataset_valid_811_norm.pkl", "r") as f:
+    with open("/home/***/MM/bottom_shoes_test/Visual/TMM/AUC_new_dataset_valid_811_norm.pkl", "r") as f:
         valid_set =  numpy.asarray(cPickle.load(f),dtype='float32')
     print 2
-    with open("/home/liujinhuan/MM/bottom_shoes_test/Visual/TMM/AUC_new_dataset_test_811_norm.pkl", "r") as f:
+    with open("/home/***/MM/bottom_shoes_test/Visual/TMM/AUC_new_dataset_test_811_norm.pkl", "r") as f:
         test_set = numpy.asarray(cPickle.load(f),dtype='float32')
     print 3
-    with open("/home/liujinhuan/MM/bottom_shoes_test/Textual/TMM/AUC_new_dataset_unified_text_train8110.pkl", "r") as f:
+    with open("/home/***/MM/bottom_shoes_test/Textual/TMM/AUC_new_dataset_unified_text_train8110.pkl", "r") as f:
         train_txt_set =  numpy.asarray(cPickle.load(f),dtype='float32')
     print 4
-    with open("/home/liujinhuan/MM/bottom_shoes_test/Textual/TMM/AUC_new_dataset_unified_text_valid8110.pkl", "r") as f:
+    with open("/home/***/MM/bottom_shoes_test/Textual/TMM/AUC_new_dataset_unified_text_valid8110.pkl", "r") as f:
         valid_txt_set =  numpy.asarray(cPickle.load(f),dtype='float32')
     print 5
-    with open("/home/liujinhuan/MM/bottom_shoes_test/Textual/TMM/AUC_new_dataset_unified_text_test8110.pkl", "r") as f:
+    with open("/home/***/MM/bottom_shoes_test/Textual/TMM/AUC_new_dataset_unified_text_test8110.pkl", "r") as f:
         test_txt_set = numpy.asarray(cPickle.load(f),dtype='float32')
     print 6
 
