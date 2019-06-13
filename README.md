@@ -1,9 +1,9 @@
 # BPR-MAE
 **Neural Fashion Experts: I Know How to Make the Complementary Clothing Matching**
 
-.<img src="https://github.com/huanhuanjiayou/BPR-MAE/tree/master/img/framework.png"/>
+.<img src="https://github.com/huanhuanjiayou/BPR-MAE/blob/master/img/framework.png"/>
 
-![image](https://github.com/huanhuanjiayou/BPR-MAE/tree/master/img/framework.png)
+![framework](https://github.com/huanhuanjiayou/BPR-MAE/blob/master/img/framework.png)
 
 Fig. 1. Illustration of the proposed BPR-MAE scheme. We employ an improved multiple autoencoder network to learn the latent compatibility space, where we jointly model the coherent relationship between the visual and textual modalities and the implicit preferences among items via the Bayesian Personalized Ranking. “>” indicates the category hierarchy.
 
